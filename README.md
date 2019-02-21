@@ -1,4 +1,4 @@
-# Webinject XMLTemplates
+# Webinject XML Templates
 WebInject XML Templates for Web Transactions
 
 Oracle WebLogic Server Administration Console Webinject XML Template
