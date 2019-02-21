@@ -1,4 +1,4 @@
-<testcasefile>testdata.xml</testcasefile>
+<testcasefile>WebInjecttestdata.xml</testcasefile>
 <useragent>WebInject Application Tester</useragent>
 <timeout>10</timeout>
 <globaltimeout>30</globaltimeout>
