@@ -1,0 +1,27 @@
+<testcases repeat="1">
+<testvar varname="URL1">http://OracleERP.arkit.co.in:8000/OA_HTML/AppsLogin</testvar>
+<testvar varname="URL2">http://OracleERP.arkit.co.in:8000/OA_HTML/OA.jsp?page=/oracle/apps/fnd/sso/login/webui/MainLoginPG&_ri=0&_ti=1501313214&language_code=US&requestUrl=&langCode=US&oapc=3</testvar>
+<testvar varname="USERNAME">USERNAME</testvar>
+<testvar varname="PASSWORD">PASSWORD</testvar>
+<case
+id="1"
+url="${URL1}"
+verifypositive="Accessibility"
+errormessage="Can not display the login page."
+logrequest="no"
+logresponse="no"
+/>
+<case
+id="2"
+method="post"
+url="${URL2}"
+posttype="application/x-www-form-urlencoded"
+postbody='_AM_TX_ID_FIELD=1&_FORM=DefaultFormName&usernameField=${USERNAME}&passwordField=${PASSWORD}&Accessibility=N&_fwkAbsolutePageName=/oracle/apps/fnd/sso/login/webui/MainLoginPG:::&SubmitButton$$unvalidated=false&SubmitButton$$serverUnvalidated=false&SubmitButton$$processFormDataCalled=true&Cancel$$unvalidated=true&Cancel$$serverUnvalidated=true&Cancel$$processFormDataCalled=true&_FORM_SUBMIT_BUTTON=SubmitButton'
+verifyresponsecode="200"
+verifynegative="Authentication Denied"
+verifypositive="Oracle Applications Home Page"
+errormessage="Login failed."
+logrequest="no"
+logresponse="no"
+/>
+</testcases>
