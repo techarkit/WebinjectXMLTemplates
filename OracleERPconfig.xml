@@ -1,0 +1,6 @@
+<testcasefile>OracleERPtestdata.xml</testcasefile>
+<useragent>WebInject Application Tester</useragent>
+<timeout>10</timeout>
+<globaltimeout>30</globaltimeout>
+<reporttype>nagios</reporttype>
+<max_redirect>20</max_redirect>
